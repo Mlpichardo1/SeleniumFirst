@@ -9,3 +9,7 @@ c:\Users\User\CareerDevs\SeleniumFirst\obj\Debug\netcoreapp2.1\SeleniumFirst.Ass
 c:\Users\User\CareerDevs\SeleniumFirst\obj\Debug\netcoreapp2.1\SeleniumFirst.AssemblyInfo.cs
 c:\Users\User\CareerDevs\SeleniumFirst\obj\Debug\netcoreapp2.1\SeleniumFirst.dll
 c:\Users\User\CareerDevs\SeleniumFirst\obj\Debug\netcoreapp2.1\SeleniumFirst.pdb
+c:\Users\User\CareerDevs\SeleniumFirst\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+c:\Users\User\CareerDevs\SeleniumFirst\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+c:\Users\User\CareerDevs\SeleniumFirst\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+c:\Users\User\CareerDevs\SeleniumFirst\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
