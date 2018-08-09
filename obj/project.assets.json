@@ -5727,11 +5727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\User\\CareerDevs\\SeleniumFirst\\SeleniumFirst.csproj",
+      "projectUniqueName": "C:\\Users\\User\\CareerDevs\\SeleniumFirst\\SeleniumFirst.csproj",
       "projectName": "SeleniumFirst",
-      "projectPath": "c:\\Users\\User\\CareerDevs\\SeleniumFirst\\SeleniumFirst.csproj",
+      "projectPath": "C:\\Users\\User\\CareerDevs\\SeleniumFirst\\SeleniumFirst.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\User\\CareerDevs\\SeleniumFirst\\obj\\",
+      "outputPath": "C:\\Users\\User\\CareerDevs\\SeleniumFirst\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

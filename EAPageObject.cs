@@ -34,7 +34,7 @@ namespace SeleniumFirst
             SeleniumSetMethods.EnterText(txtInitial, initial);
             SeleniumSetMethods.EnterText(txtFirstname, firstName);
             SeleniumSetMethods.EnterText(txtMiddleName, middleName);
-            SeleniumSetMethods.Click(btnSave);
+            SeleniumSetMethods.Clicks(btnSave);
              
             
             // txtInitial.SendKeys(initial);

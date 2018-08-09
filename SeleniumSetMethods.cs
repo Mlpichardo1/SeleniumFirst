@@ -12,7 +12,7 @@ namespace SeleniumFirst
         }
 
         // Click on Button, Checkbox, option etc
-        public static void Click(IWebElement element)
+        public static void Clicks(IWebElement element)
         {
             element.Click();
         }
