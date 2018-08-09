@@ -26,6 +26,14 @@ namespace SeleniumFirst
         [Test]
         public void ExecuteTest()
         {
+            // ExcelLib.PopulateInCollection(@"C:\Users\User\ExcelTest.ods");
+
+            // Login to Applciation
+            // LoginPageObject pageLogin = new LoginPageObject();
+            // EAPageObject pageEA = pageLogin.Login(ExcelLib.ReadData(1, "UserName"), ExcelLib.ReadData(1, "Password"));
+
+            // pageEA.FillUserForm(ExcelLib.ReadData(1, "Initial"), ExcelLib.ReadData(1, "MiddleName"), ExcelLib.ReadData(1, "FirstName"));
+
             // Login to Applciation
             LoginPageObject pageLogin = new LoginPageObject();
             EAPageObject pageEA = pageLogin.Login("execute", "automation");
@@ -39,20 +47,6 @@ namespace SeleniumFirst
 
             page.btnSave.Click();
 
-
-
-            // // Title 
-            // SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
-
-            // // Initial
-            // SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
-
-            // System.Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetText("TitleId", PropertyType.Id));
-
-            // System.Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText("TitleId", PropertyType.Name));
-
-            // //Click 
-            // SeleniumSetMethods.Click("Save", PropertyType.Name);
         }
 
         [TearDown]
@@ -61,6 +55,5 @@ namespace SeleniumFirst
             // Close Driver
             PropertiesCollection.driver.Close();
         }
-
     }
 }

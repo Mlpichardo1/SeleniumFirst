@@ -15,6 +15,27 @@
           "lib/netstandard2.0/SeleniumExtras.PageObjects.dll": {}
         }
       },
+      "ExcelDataReader/3.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ExcelDataReader.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ExcelDataReader.dll": {}
+        }
+      },
+      "ExcelDataReader.DataSet/3.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ExcelDataReader": "3.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/ExcelDataReader.DataSet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/ExcelDataReader.DataSet.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/15.8.0": {
         "type": "package",
         "compile": {
@@ -705,6 +726,9 @@
         "runtime": {
           "lib/netstandard2.0/WebDriver.dll": {}
         }
+      },
+      "SpecFlow.ExcelData/1.1.0.2": {
+        "type": "package"
       },
       "System.AppContext/4.1.0": {
         "type": "package",
@@ -1677,6 +1701,38 @@
         "lib/net40/SeleniumExtras.PageObjects.dll",
         "lib/net45/SeleniumExtras.PageObjects.dll",
         "lib/netstandard2.0/SeleniumExtras.PageObjects.dll"
+      ]
+    },
+    "ExcelDataReader/3.4.0": {
+      "sha512": "sBDS0csMdok65kEttJbhx2Uu2l8PEEO0SqmuPfPWBMgrM5f9+XyC0C8knkrUcEHAX8jEr11TXWsUfyqZu0NZ5g==",
+      "type": "package",
+      "path": "exceldatareader/3.4.0",
+      "files": [
+        "exceldatareader.3.4.0.nupkg.sha512",
+        "exceldatareader.nuspec",
+        "lib/net20/ExcelDataReader.dll",
+        "lib/net20/ExcelDataReader.xml",
+        "lib/net45/ExcelDataReader.dll",
+        "lib/net45/ExcelDataReader.xml",
+        "lib/netstandard1.3/ExcelDataReader.dll",
+        "lib/netstandard1.3/ExcelDataReader.xml",
+        "lib/netstandard2.0/ExcelDataReader.dll",
+        "lib/netstandard2.0/ExcelDataReader.xml"
+      ]
+    },
+    "ExcelDataReader.DataSet/3.4.0": {
+      "sha512": "h0OG+X4tLg85XCzidfNmrsH5g2lzaRtGVT5b9uRpQsMyau0d7b/TvLV7qhldq3UoNm3mjSomikMVegeyFffmaA==",
+      "type": "package",
+      "path": "exceldatareader.dataset/3.4.0",
+      "files": [
+        "exceldatareader.dataset.3.4.0.nupkg.sha512",
+        "exceldatareader.dataset.nuspec",
+        "lib/net20/ExcelDataReader.DataSet.dll",
+        "lib/net20/ExcelDataReader.DataSet.xml",
+        "lib/net45/ExcelDataReader.DataSet.dll",
+        "lib/net45/ExcelDataReader.DataSet.xml",
+        "lib/netstandard2.0/ExcelDataReader.DataSet.dll",
+        "lib/netstandard2.0/ExcelDataReader.DataSet.xml"
       ]
     },
     "Microsoft.CodeCoverage/15.8.0": {
@@ -2701,6 +2757,20 @@
         "lib/netstandard2.0/WebDriver.xml",
         "selenium.webdriver.3.14.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
+      ]
+    },
+    "SpecFlow.ExcelData/1.1.0.2": {
+      "sha512": "2XQo6TsJTd9YmFFZYE7f//6lQ/LYDm9rBQLe9AQIAQx4tf/J6EcQHlwUmktsqpUJkw/4K0Gaxy0M4pcunnHumA==",
+      "type": "package",
+      "path": "specflow.exceldata/1.1.0.2",
+      "files": [
+        "content/GoogleHook.cs",
+        "content/GooleSearch.feature",
+        "content/GooleSearchSteps.cs",
+        "content/ReadExcel.cs",
+        "content/TestData/TestData.xls",
+        "specflow.exceldata.1.1.0.2.nupkg.sha512",
+        "specflow.exceldata.nuspec"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -5711,13 +5781,17 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "DotNetSeleniumExtras.PageObjects.Core >= 3.12.0",
+      "ExcelDataReader >= 3.4.0",
+      "ExcelDataReader.DataSet >= 3.4.0",
       "Microsoft.NET.Test.Sdk >= 15.8.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "NUnit >= 3.10.1",
       "NUnit3TestAdapter >= 3.10.0",
       "Selenium.Chrome.WebDriver >= 2.40.0",
       "Selenium.Support >= 3.14.0",
-      "Selenium.WebDriver >= 3.14.0"
+      "Selenium.WebDriver >= 3.14.0",
+      "SpecFlow.ExcelData >= 1.1.0.2",
+      "System.Xml.XmlDocument >= 4.3.0"
     ]
   },
   "packageFolders": {
@@ -5727,11 +5801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\User\\CareerDevs\\SeleniumFirst\\SeleniumFirst.csproj",
+      "projectUniqueName": "C:\\Users\\User\\CareerDevs\\SeleniumFirst\\SeleniumFirst.csproj",
       "projectName": "SeleniumFirst",
-      "projectPath": "c:\\Users\\User\\CareerDevs\\SeleniumFirst\\SeleniumFirst.csproj",
+      "projectPath": "C:\\Users\\User\\CareerDevs\\SeleniumFirst\\SeleniumFirst.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\User\\CareerDevs\\SeleniumFirst\\obj\\",
+      "outputPath": "C:\\Users\\User\\CareerDevs\\SeleniumFirst\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5763,6 +5837,14 @@
             "target": "Package",
             "version": "[3.12.0, )"
           },
+          "ExcelDataReader": {
+            "target": "Package",
+            "version": "[3.4.0, )"
+          },
+          "ExcelDataReader.DataSet": {
+            "target": "Package",
+            "version": "[3.4.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[15.8.0, )"
@@ -5791,6 +5873,14 @@
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[3.14.0, )"
+          },
+          "SpecFlow.ExcelData": {
+            "target": "Package",
+            "version": "[1.1.0.2, )"
+          },
+          "System.Xml.XmlDocument": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           }
         },
         "imports": [
