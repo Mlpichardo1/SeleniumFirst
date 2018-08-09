@@ -7,8 +7,7 @@ namespace SeleniumFirst
 {
     class Program
     {
-        // First create reference for our browser
-        IWebDriver driver = new ChromeDriver(@"C:\Users\User\");
+    
         // static void Main(string[] args)
         // {
         // }
@@ -16,33 +15,51 @@ namespace SeleniumFirst
         [SetUp]
         public void Initialize()
         {
+            // First create reference for our browser
+            PropertiesCollection.driver = new ChromeDriver(@"C:\Users\User\");
+
             // Navigate to Google Page
-            driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=&Login=Login");
+            PropertiesCollection.driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
             System.Console.WriteLine("Opened URL");
         }
 
         [Test]
         public void ExecuteTest()
         {
-            // Title 
-            SeleniumSetMethods.SelectDropDown(driver, "TitleId", "Mr.", "Id");
+            // Login to Applciation
+            LoginPageObject pageLogin = new LoginPageObject();
+            EAPageObject pageEA = pageLogin.Login("execute", "automation");
 
-            // Initial
-            SeleniumSetMethods.EnterText(driver, "Initial", "executeautomation", "Name");
+            pageEA.FillUserForm("MP", "Manny", "Automation");
 
-            System.Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetText(driver, "TitleId", "Id"));
+            // Initialize the Page by calling its Reference
+            EAPageObject page = new EAPageObject();
 
-            System.Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText(driver, "TitleId", "Name"));
+            page.txtInitial.SendKeys("executeautomation");
 
-            //Click 
-            SeleniumSetMethods.Click(driver, "Save", "Name");
+            page.btnSave.Click();
+
+
+
+            // // Title 
+            // SeleniumSetMethods.SelectDropDown("TitleId", "Mr.", PropertyType.Id);
+
+            // // Initial
+            // SeleniumSetMethods.EnterText("Initial", "executeautomation", PropertyType.Name);
+
+            // System.Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetText("TitleId", PropertyType.Id));
+
+            // System.Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText("TitleId", PropertyType.Name));
+
+            // //Click 
+            // SeleniumSetMethods.Click("Save", PropertyType.Name);
         }
 
         [TearDown]
         public void CleanUp()
         {
             // Close Driver
-            driver.Close();
+            PropertiesCollection.driver.Close();
         }
 
     }
