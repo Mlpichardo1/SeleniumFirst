@@ -17,18 +17,25 @@ namespace SeleniumFirst
         public void Initialize()
         {
             // Navigate to Google Page
-            driver.Navigate().GoToUrl("http://www.google.com");
+            driver.Navigate().GoToUrl("http://executeautomation.com/demosite/index.html?UserName=&Password=&Login=Login");
             System.Console.WriteLine("Opened URL");
         }
 
         [Test]
         public void ExecuteTest()
         {
-            // Find the element
-            IWebElement element = driver.FindElement(By.Name("q"));
+            // Title 
+            SeleniumSetMethods.SelectDropDown(driver, "TitleId", "Mr.", "Id");
 
-            // Perform Ops
-            element.SendKeys("executeautomation");
+            // Initial
+            SeleniumSetMethods.EnterText(driver, "Initial", "executeautomation", "Name");
+
+            System.Console.WriteLine("The value from my Title is: " + SeleniumGetMethods.GetText(driver, "TitleId", "Id"));
+
+            System.Console.WriteLine("The value from my Initial is: " + SeleniumGetMethods.GetText(driver, "TitleId", "Name"));
+
+            //Click 
+            SeleniumSetMethods.Click(driver, "Save", "Name");
         }
 
         [TearDown]
