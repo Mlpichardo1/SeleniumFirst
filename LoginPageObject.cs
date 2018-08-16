@@ -41,7 +41,7 @@ namespace SeleniumFirst
             //Password
             txtPassword.SendKeys(password);
             //Click Button
-            btnLogin.Clicks();
+            btnLogin.Submit();
 
             //Return the page object
             return new EAPageObject();

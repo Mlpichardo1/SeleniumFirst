@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "29c3b82a1cffc285c9955f12c23d510287bd305a"
+    "signature": "6acb735c718978906cd441639d520cc5ab1963ce"
   },
   "compilationOptions": {},
   "targets": {
@@ -13,12 +13,13 @@
           "ExcelDataReader.DataSet": "3.4.0",
           "Microsoft.NET.Test.Sdk": "15.8.0",
           "NUnit": "3.10.1",
+          "NUnit.Console": "3.8.0",
           "NUnit3TestAdapter": "3.10.0",
           "Selenium.Chrome.WebDriver": "2.40.0",
           "Selenium.Support": "3.14.0",
           "Selenium.WebDriver": "3.14.0",
           "SpecFlow.ExcelData": "1.1.0.2",
-          "System.Xml.XmlDocument": "4.3.0"
+          "System.Text.Encoding.CodePages": "4.5.0"
         },
         "runtime": {
           "SeleniumFirst.dll": {}
@@ -444,6 +445,22 @@
           }
         }
       },
+      "NUnit.Console/3.8.0": {
+        "dependencies": {
+          "NUnit.ConsoleRunner": "3.8.0",
+          "NUnit.Extension.NUnitProjectLoader": "3.5.0",
+          "NUnit.Extension.NUnitV2Driver": "3.6.0",
+          "NUnit.Extension.NUnitV2ResultWriter": "3.5.0",
+          "NUnit.Extension.TeamCityEventListener": "1.0.3",
+          "NUnit.Extension.VSProjectLoader": "3.7.0"
+        }
+      },
+      "NUnit.ConsoleRunner/3.8.0": {},
+      "NUnit.Extension.NUnitProjectLoader/3.5.0": {},
+      "NUnit.Extension.NUnitV2Driver/3.6.0": {},
+      "NUnit.Extension.NUnitV2ResultWriter/3.5.0": {},
+      "NUnit.Extension.TeamCityEventListener/1.0.3": {},
+      "NUnit.Extension.VSProjectLoader/3.7.0": {},
       "NUnit3TestAdapter/3.10.0": {
         "dependencies": {
           "Microsoft.DotNet.InternalAbstractions": "1.0.0",
@@ -865,6 +882,14 @@
         }
       },
       "System.Runtime/4.3.0": {},
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "System.Runtime.Extensions/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -936,6 +961,25 @@
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.1.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
         }
       },
       "System.Text.Encoding.Extensions/4.3.0": {
@@ -1177,6 +1221,55 @@
       "sha512": "sha512-E3ii6+VLdeIxTQ5gPjk/7g/xl+aCifbfcIkiGayZCuos+22FEdtKGrxMe6SzoXCQCcL7gdqhfNIFTaZ1+dS18g==",
       "path": "nunit/3.10.1",
       "hashPath": "nunit.3.10.1.nupkg.sha512"
+    },
+    "NUnit.Console/3.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fcE+z3I1U1vPxn//VHqNE74oUWZDoZu1nanDKlYbOMYQpIoLsRsrvSajjVI3PX2VLZtY3FLvKRVEXB/VubnT+A==",
+      "path": "nunit.console/3.8.0",
+      "hashPath": "nunit.console.3.8.0.nupkg.sha512"
+    },
+    "NUnit.ConsoleRunner/3.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CGgYNNMPmK7/BZ7g36g1GcS3heLN2Zl2aAm54dhOZAXZW3l+3S+imyZ3J9WA+SCiRyBC0PbmkCtb4dVkxoxytw==",
+      "path": "nunit.consolerunner/3.8.0",
+      "hashPath": "nunit.consolerunner.3.8.0.nupkg.sha512"
+    },
+    "NUnit.Extension.NUnitProjectLoader/3.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oe+PYd5uf0u3WoV6txz6esPe5I9I3PV0o96KoEVvJs+AYMG9MCebmnMq7N8dYJrWiDKIuSDwZ6WTs84XTDZ/Pw==",
+      "path": "nunit.extension.nunitprojectloader/3.5.0",
+      "hashPath": "nunit.extension.nunitprojectloader.3.5.0.nupkg.sha512"
+    },
+    "NUnit.Extension.NUnitV2Driver/3.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TZIWwZaND/91p9FCuZH0vJLNPVyFV4No6XHgtd2ZLwN6MQZVPWdI4apL38ejsKAFn3nF1yTlvJgYF1l2mlo8wA==",
+      "path": "nunit.extension.nunitv2driver/3.6.0",
+      "hashPath": "nunit.extension.nunitv2driver.3.6.0.nupkg.sha512"
+    },
+    "NUnit.Extension.NUnitV2ResultWriter/3.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qz5Xxd+yBStdMP/jIIFz01cN3x8rKBCoF3alFHa5Gr+lZqdFyV1DN+3l8AlHrDSX5OzAz+T5CCBkgDim/hqGkQ==",
+      "path": "nunit.extension.nunitv2resultwriter/3.5.0",
+      "hashPath": "nunit.extension.nunitv2resultwriter.3.5.0.nupkg.sha512"
+    },
+    "NUnit.Extension.TeamCityEventListener/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xl/ISHoJMbQHxpfa06KELaSU46V+KjofeZHAPmlb6ohw4HmmzRp+Hk7vkJPZtNyTrKZbqutefOSMKpnkgEl8tA==",
+      "path": "nunit.extension.teamcityeventlistener/1.0.3",
+      "hashPath": "nunit.extension.teamcityeventlistener.1.0.3.nupkg.sha512"
+    },
+    "NUnit.Extension.VSProjectLoader/3.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3xKLI7hnP5JWL1tauj2OaF7PFoGTNspryvk+894ZQsmEeRHDJwrfxc2sfWokFo2vZmlVCrCcVDl+9ALrhbhrYg==",
+      "path": "nunit.extension.vsprojectloader/3.7.0",
+      "hashPath": "nunit.extension.vsprojectloader.3.7.0.nupkg.sha512"
     },
     "NUnit3TestAdapter/3.10.0": {
       "type": "package",
@@ -1472,6 +1565,13 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6zBxkHYemB0kQiHP3vGXGRXejZVoNVuMn2paUuqKKi5Wyjkxfkp+D0rd0c3VrGwotidRINt6KpOi2smL4VkJKw==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512"
+    },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1534,6 +1634,13 @@
       "sha512": "sha512-BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
       "path": "system.text.encoding/4.3.0",
       "hashPath": "system.text.encoding.4.3.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-16EVkWmNnoH3/Yj9c5s5VuLK5Uv/Dnkc3P2kMmnD7wJcUuvcHVvM2IhVJanf2hHRZUitH+cIkPCPHrBoCXc7Rw==",
+      "path": "system.text.encoding.codepages/4.5.0",
+      "hashPath": "system.text.encoding.codepages.4.5.0.nupkg.sha512"
     },
     "System.Text.Encoding.Extensions/4.3.0": {
       "type": "package",

@@ -12,6 +12,7 @@ namespace SeleniumFirst
     {
         private static DataTable ExcelToDataTable(string fileName)
         {
+            System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
             //open file and returns as Stream
             FileStream stream = File.Open(fileName, FileMode.Open, FileAccess.Read);
             //Createopenxmlreader via ExcelReaderFactory
@@ -46,7 +47,7 @@ namespace SeleniumFirst
         //Iterate through the rows and columns of the Table
         for (int row = 1; row <= table.Rows.Count; row++)
         {
-            for (int col = 0; col <= table.Columns.Count; col++)
+            for (int col = 0; col < table.Columns.Count; col++)
             {
                 Datacollection dtTable = new Datacollection()
                 {

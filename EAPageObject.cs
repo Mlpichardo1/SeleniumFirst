@@ -19,7 +19,7 @@ namespace SeleniumFirst
 
 
         [FindsBy(How = How.Name, Using = "FirstName")]
-        public IWebElement txtFirstname { get; set; }
+        public IWebElement txtFirstName { get; set; }
 
 
         [FindsBy(How = How.Name, Using = "MiddleName")]
@@ -33,7 +33,7 @@ namespace SeleniumFirst
         {
             txtInitial.EnterText(initial);
             txtMiddleName.EnterText(middleName);
-            txtFirstname.EnterText(firstName);
+            txtFirstName.EnterText(firstName);
             btnSave.Clicks();
 
         }
